@@ -1,4 +1,4 @@
-package Aula06.Lista
+package Aula07.Funcao
 
 fun main() {
 
