@@ -13,6 +13,9 @@ class Conta(conta: Int, var saldo: Double, cliente: Cliente) {
             this.saldo = this.saldo - valor
             println("Você realizou um saque")
             println("Seu saldo atual é ${this.saldo}")
+        }else{
+            println("Saldo Insuficiente...")
         }
+
     }
 }

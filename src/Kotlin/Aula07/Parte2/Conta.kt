@@ -9,7 +9,12 @@ class Conta(numero: Int, var saldo: Double, cliente: Cliente) {
         println("Deposito, seu saldo atual é: ${this.saldo}")
     }
     fun sacar(valor: Double){
-        this.saldo = this.saldo - valor
-        println("Retirada, seu saldo atual é: ${this.saldo}")
+        if ( valor <= this.saldo){
+            this.saldo = this.saldo - valor
+            println("Retirada, seu saldo atual é: ${this.saldo}")
+        }else{
+            println("Saldo insuficiente para esse saque.")
+        }
+
     }
 }
